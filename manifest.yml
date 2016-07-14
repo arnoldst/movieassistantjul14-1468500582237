@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: movieassistantjul14
+  host: movieassistantjul14
+  disk_quota: 1024M
+  services:
+  - movieassistantjul14-natural_language_classifier
+  - movieassistantjul14-dialog
+  command: npm start
